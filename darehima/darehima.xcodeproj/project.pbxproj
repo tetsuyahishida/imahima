@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FD38C31142DE0890088D660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD38C30142DE0890088D660 /* UIKit.framework */; };
+		2FD38C33142DE0890088D660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD38C32142DE0890088D660 /* Foundation.framework */; };
+		2FD38C35142DE0890088D660 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD38C34142DE0890088D660 /* CoreGraphics.framework */; };
+		2FD38C3B142DE0890088D660 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FD38C39142DE0890088D660 /* InfoPlist.strings */; };
+		2FD38C3D142DE0890088D660 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD38C3C142DE0890088D660 /* main.m */; };
+		2FD38C41142DE0890088D660 /* darehimaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD38C40142DE0890088D660 /* darehimaAppDelegate.m */; };
+		2FD38C44142DE0890088D660 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD38C42142DE0890088D660 /* MainWindow.xib */; };
+		2FD38C47142DE0890088D660 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD38C46142DE0890088D660 /* FirstViewController.m */; };
+		2FD38C4A142DE0890088D660 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD38C49142DE0890088D660 /* SecondViewController.m */; };
+		2FD38C4D142DE0890088D660 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD38C4B142DE0890088D660 /* FirstView.xib */; };
+		2FD38C50142DE0890088D660 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FD38C4E142DE0890088D660 /* SecondView.xib */; };
+		2FD38C58142DE08A0088D660 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD38C57142DE08A0088D660 /* SenTestingKit.framework */; };
+		2FD38C59142DE08A0088D660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD38C30142DE0890088D660 /* UIKit.framework */; };
+		2FD38C5A142DE08A0088D660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD38C32142DE0890088D660 /* Foundation.framework */; };
+		2FD38C5B142DE08A0088D660 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD38C34142DE0890088D660 /* CoreGraphics.framework */; };
+		2FD38C63142DE08A0088D660 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FD38C61142DE08A0088D660 /* InfoPlist.strings */; };
+		2FD38C65142DE08A0088D660 /* darehimaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2FD38C64142DE08A0088D660 /* darehimaTests.h */; };
+		2FD38C67142DE08A0088D660 /* darehimaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD38C66142DE08A0088D660 /* darehimaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FD38C5C142DE08A0088D660 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FD38C23142DE0880088D660 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FD38C2B142DE0890088D660;
+			remoteInfo = darehima;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FD38C2C142DE0890088D660 /* darehima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = darehima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD38C30142DE0890088D660 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2FD38C32142DE0890088D660 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2FD38C34142DE0890088D660 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2FD38C38142DE0890088D660 /* darehima-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "darehima-Info.plist"; sourceTree = "<group>"; };
+		2FD38C3A142DE0890088D660 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2FD38C3C142DE0890088D660 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FD38C3E142DE0890088D660 /* darehima-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "darehima-Prefix.pch"; sourceTree = "<group>"; };
+		2FD38C3F142DE0890088D660 /* darehimaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = darehimaAppDelegate.h; sourceTree = "<group>"; };
+		2FD38C40142DE0890088D660 /* darehimaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = darehimaAppDelegate.m; sourceTree = "<group>"; };
+		2FD38C43142DE0890088D660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2FD38C45142DE0890088D660 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		2FD38C46142DE0890088D660 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		2FD38C48142DE0890088D660 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		2FD38C49142DE0890088D660 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2FD38C4C142DE0890088D660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		2FD38C4F142DE0890088D660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		2FD38C56142DE08A0088D660 /* darehimaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = darehimaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD38C57142DE08A0088D660 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2FD38C60142DE08A0088D660 /* darehimaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "darehimaTests-Info.plist"; sourceTree = "<group>"; };
+		2FD38C62142DE08A0088D660 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2FD38C64142DE08A0088D660 /* darehimaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = darehimaTests.h; sourceTree = "<group>"; };
+		2FD38C66142DE08A0088D660 /* darehimaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = darehimaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FD38C29142DE0890088D660 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD38C31142DE0890088D660 /* UIKit.framework in Frameworks */,
+				2FD38C33142DE0890088D660 /* Foundation.framework in Frameworks */,
+				2FD38C35142DE0890088D660 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD38C52142DE08A0088D660 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD38C58142DE08A0088D660 /* SenTestingKit.framework in Frameworks */,
+				2FD38C59142DE08A0088D660 /* UIKit.framework in Frameworks */,
+				2FD38C5A142DE08A0088D660 /* Foundation.framework in Frameworks */,
+				2FD38C5B142DE08A0088D660 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FD38C21142DE0880088D660 = {
+			isa = PBXGroup;
+			children = (
+				2FD38C36142DE0890088D660 /* darehima */,
+				2FD38C5E142DE08A0088D660 /* darehimaTests */,
+				2FD38C2F142DE0890088D660 /* Frameworks */,
+				2FD38C2D142DE0890088D660 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FD38C2D142DE0890088D660 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FD38C2C142DE0890088D660 /* darehima.app */,
+				2FD38C56142DE08A0088D660 /* darehimaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FD38C2F142DE0890088D660 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FD38C30142DE0890088D660 /* UIKit.framework */,
+				2FD38C32142DE0890088D660 /* Foundation.framework */,
+				2FD38C34142DE0890088D660 /* CoreGraphics.framework */,
+				2FD38C57142DE08A0088D660 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FD38C36142DE0890088D660 /* darehima */ = {
+			isa = PBXGroup;
+			children = (
+				2FD38C3F142DE0890088D660 /* darehimaAppDelegate.h */,
+				2FD38C40142DE0890088D660 /* darehimaAppDelegate.m */,
+				2FD38C42142DE0890088D660 /* MainWindow.xib */,
+				2FD38C45142DE0890088D660 /* FirstViewController.h */,
+				2FD38C46142DE0890088D660 /* FirstViewController.m */,
+				2FD38C48142DE0890088D660 /* SecondViewController.h */,
+				2FD38C49142DE0890088D660 /* SecondViewController.m */,
+				2FD38C4B142DE0890088D660 /* FirstView.xib */,
+				2FD38C4E142DE0890088D660 /* SecondView.xib */,
+				2FD38C37142DE0890088D660 /* Supporting Files */,
+			);
+			path = darehima;
+			sourceTree = "<group>";
+		};
+		2FD38C37142DE0890088D660 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FD38C38142DE0890088D660 /* darehima-Info.plist */,
+				2FD38C39142DE0890088D660 /* InfoPlist.strings */,
+				2FD38C3C142DE0890088D660 /* main.m */,
+				2FD38C3E142DE0890088D660 /* darehima-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FD38C5E142DE08A0088D660 /* darehimaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FD38C64142DE08A0088D660 /* darehimaTests.h */,
+				2FD38C66142DE08A0088D660 /* darehimaTests.m */,
+				2FD38C5F142DE08A0088D660 /* Supporting Files */,
+			);
+			path = darehimaTests;
+			sourceTree = "<group>";
+		};
+		2FD38C5F142DE08A0088D660 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FD38C60142DE08A0088D660 /* darehimaTests-Info.plist */,
+				2FD38C61142DE08A0088D660 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FD38C2B142DE0890088D660 /* darehima */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FD38C6A142DE08A0088D660 /* Build configuration list for PBXNativeTarget "darehima" */;
+			buildPhases = (
+				2FD38C28142DE0890088D660 /* Sources */,
+				2FD38C29142DE0890088D660 /* Frameworks */,
+				2FD38C2A142DE0890088D660 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = darehima;
+			productName = darehima;
+			productReference = 2FD38C2C142DE0890088D660 /* darehima.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2FD38C55142DE08A0088D660 /* darehimaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FD38C6D142DE08A0088D660 /* Build configuration list for PBXNativeTarget "darehimaTests" */;
+			buildPhases = (
+				2FD38C51142DE08A0088D660 /* Sources */,
+				2FD38C52142DE08A0088D660 /* Frameworks */,
+				2FD38C53142DE08A0088D660 /* Resources */,
+				2FD38C54142DE08A0088D660 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FD38C5D142DE08A0088D660 /* PBXTargetDependency */,
+			);
+			name = darehimaTests;
+			productName = darehimaTests;
+			productReference = 2FD38C56142DE08A0088D660 /* darehimaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FD38C23142DE0880088D660 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2FD38C26142DE0880088D660 /* Build configuration list for PBXProject "darehima" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2FD38C21142DE0880088D660;
+			productRefGroup = 2FD38C2D142DE0890088D660 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FD38C2B142DE0890088D660 /* darehima */,
+				2FD38C55142DE08A0088D660 /* darehimaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FD38C2A142DE0890088D660 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD38C3B142DE0890088D660 /* InfoPlist.strings in Resources */,
+				2FD38C44142DE0890088D660 /* MainWindow.xib in Resources */,
+				2FD38C4D142DE0890088D660 /* FirstView.xib in Resources */,
+				2FD38C50142DE0890088D660 /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD38C53142DE08A0088D660 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD38C63142DE08A0088D660 /* InfoPlist.strings in Resources */,
+				2FD38C65142DE08A0088D660 /* darehimaTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FD38C54142DE08A0088D660 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FD38C28142DE0890088D660 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD38C3D142DE0890088D660 /* main.m in Sources */,
+				2FD38C41142DE0890088D660 /* darehimaAppDelegate.m in Sources */,
+				2FD38C47142DE0890088D660 /* FirstViewController.m in Sources */,
+				2FD38C4A142DE0890088D660 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FD38C51142DE08A0088D660 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD38C67142DE08A0088D660 /* darehimaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FD38C5D142DE08A0088D660 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2FD38C2B142DE0890088D660 /* darehima */;
+			targetProxy = 2FD38C5C142DE08A0088D660 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FD38C39142DE0890088D660 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD38C3A142DE0890088D660 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2FD38C42142DE0890088D660 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD38C43142DE0890088D660 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		2FD38C4B142DE0890088D660 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD38C4C142DE0890088D660 /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		2FD38C4E142DE0890088D660 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD38C4F142DE0890088D660 /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+		2FD38C61142DE08A0088D660 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD38C62142DE08A0088D660 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FD38C68142DE08A0088D660 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2FD38C69142DE08A0088D660 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FD38C6B142DE08A0088D660 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "darehima/darehima-Prefix.pch";
+				INFOPLIST_FILE = "darehima/darehima-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2FD38C6C142DE08A0088D660 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "darehima/darehima-Prefix.pch";
+				INFOPLIST_FILE = "darehima/darehima-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2FD38C6E142DE08A0088D660 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/darehima.app/darehima";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "darehima/darehima-Prefix.pch";
+				INFOPLIST_FILE = "darehimaTests/darehimaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2FD38C6F142DE08A0088D660 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/darehima.app/darehima";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "darehima/darehima-Prefix.pch";
+				INFOPLIST_FILE = "darehimaTests/darehimaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FD38C26142DE0880088D660 /* Build configuration list for PBXProject "darehima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD38C68142DE08A0088D660 /* Debug */,
+				2FD38C69142DE08A0088D660 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FD38C6A142DE08A0088D660 /* Build configuration list for PBXNativeTarget "darehima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD38C6B142DE08A0088D660 /* Debug */,
+				2FD38C6C142DE08A0088D660 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2FD38C6D142DE08A0088D660 /* Build configuration list for PBXNativeTarget "darehimaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD38C6E142DE08A0088D660 /* Debug */,
+				2FD38C6F142DE08A0088D660 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FD38C23142DE0880088D660 /* Project object */;
+}
