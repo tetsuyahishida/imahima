@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F9BFEBE142FF1440031A3CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEBD142FF1440031A3CA /* UIKit.framework */; };
+		2F9BFEC0142FF1440031A3CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEBF142FF1440031A3CA /* Foundation.framework */; };
+		2F9BFEC2142FF1440031A3CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEC1142FF1440031A3CA /* CoreGraphics.framework */; };
+		2F9BFEC8142FF1440031A3CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F9BFEC6142FF1440031A3CA /* InfoPlist.strings */; };
+		2F9BFECA142FF1440031A3CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BFEC9142FF1440031A3CA /* main.m */; };
+		2F9BFECE142FF1440031A3CA /* darehimatabAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BFECD142FF1440031A3CA /* darehimatabAppDelegate.m */; };
+		2F9BFED1142FF1440031A3CA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9BFECF142FF1440031A3CA /* MainWindow.xib */; };
+		2F9BFED9142FF1440031A3CA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFED8142FF1440031A3CA /* SenTestingKit.framework */; };
+		2F9BFEDA142FF1440031A3CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEBD142FF1440031A3CA /* UIKit.framework */; };
+		2F9BFEDB142FF1440031A3CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEBF142FF1440031A3CA /* Foundation.framework */; };
+		2F9BFEDC142FF1440031A3CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEC1142FF1440031A3CA /* CoreGraphics.framework */; };
+		2F9BFEE4142FF1440031A3CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F9BFEE2142FF1440031A3CA /* InfoPlist.strings */; };
+		2F9BFEE6142FF1440031A3CA /* darehimatabTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2F9BFEE5142FF1440031A3CA /* darehimatabTests.h */; };
+		2F9BFEE8142FF1440031A3CA /* darehimatabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BFEE7142FF1440031A3CA /* darehimatabTests.m */; };
+		2F9BFEF8142FF3340031A3CA /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BFEF6142FF3330031A3CA /* AboutViewController.m */; };
+		2F9BFEF9142FF3340031A3CA /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9BFEF7142FF3340031A3CA /* AboutView.xib */; };
+		2F9BFEFE142FF4EB0031A3CA /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BFEFC142FF4EB0031A3CA /* NavController.m */; };
+		2F9BFF03142FF5DD0031A3CA /* himatableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BFF01142FF5DD0031A3CA /* himatableViewController.m */; };
+		2F9BFF04142FF5DD0031A3CA /* himatableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9BFF02142FF5DD0031A3CA /* himatableView.xib */; };
+		2F9BFF08143008E70031A3CA /* himaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BFF06143008E70031A3CA /* himaDetailViewController.m */; };
+		2F9BFF09143008E70031A3CA /* himaDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9BFF07143008E70031A3CA /* himaDetailView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F9BFEDD142FF1440031A3CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F9BFEB0142FF1430031A3CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F9BFEB8142FF1440031A3CA;
+			remoteInfo = darehimatab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F9BFEB9142FF1440031A3CA /* darehimatab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = darehimatab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9BFEBD142FF1440031A3CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F9BFEBF142FF1440031A3CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2F9BFEC1142FF1440031A3CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2F9BFEC5142FF1440031A3CA /* darehimatab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "darehimatab-Info.plist"; sourceTree = "<group>"; };
+		2F9BFEC7142FF1440031A3CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F9BFEC9142FF1440031A3CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F9BFECB142FF1440031A3CA /* darehimatab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "darehimatab-Prefix.pch"; sourceTree = "<group>"; };
+		2F9BFECC142FF1440031A3CA /* darehimatabAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = darehimatabAppDelegate.h; sourceTree = "<group>"; };
+		2F9BFECD142FF1440031A3CA /* darehimatabAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = darehimatabAppDelegate.m; sourceTree = "<group>"; };
+		2F9BFED0142FF1440031A3CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2F9BFED7142FF1440031A3CA /* darehimatabTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = darehimatabTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9BFED8142FF1440031A3CA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2F9BFEE1142FF1440031A3CA /* darehimatabTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "darehimatabTests-Info.plist"; sourceTree = "<group>"; };
+		2F9BFEE3142FF1440031A3CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F9BFEE5142FF1440031A3CA /* darehimatabTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = darehimatabTests.h; sourceTree = "<group>"; };
+		2F9BFEE7142FF1440031A3CA /* darehimatabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = darehimatabTests.m; sourceTree = "<group>"; };
+		2F9BFEF5142FF3330031A3CA /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		2F9BFEF6142FF3330031A3CA /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		2F9BFEF7142FF3340031A3CA /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutView.xib; sourceTree = "<group>"; };
+		2F9BFEFB142FF4EB0031A3CA /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
+		2F9BFEFC142FF4EB0031A3CA /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
+		2F9BFF00142FF5DD0031A3CA /* himatableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = himatableViewController.h; sourceTree = "<group>"; };
+		2F9BFF01142FF5DD0031A3CA /* himatableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = himatableViewController.m; sourceTree = "<group>"; };
+		2F9BFF02142FF5DD0031A3CA /* himatableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = himatableView.xib; sourceTree = "<group>"; };
+		2F9BFF05143008E70031A3CA /* himaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = himaDetailViewController.h; sourceTree = "<group>"; };
+		2F9BFF06143008E70031A3CA /* himaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = himaDetailViewController.m; sourceTree = "<group>"; };
+		2F9BFF07143008E70031A3CA /* himaDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = himaDetailView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F9BFEB6142FF1440031A3CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9BFEBE142FF1440031A3CA /* UIKit.framework in Frameworks */,
+				2F9BFEC0142FF1440031A3CA /* Foundation.framework in Frameworks */,
+				2F9BFEC2142FF1440031A3CA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F9BFED3142FF1440031A3CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9BFED9142FF1440031A3CA /* SenTestingKit.framework in Frameworks */,
+				2F9BFEDA142FF1440031A3CA /* UIKit.framework in Frameworks */,
+				2F9BFEDB142FF1440031A3CA /* Foundation.framework in Frameworks */,
+				2F9BFEDC142FF1440031A3CA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F9BFEAE142FF1430031A3CA = {
+			isa = PBXGroup;
+			children = (
+				2F9BFEC3142FF1440031A3CA /* darehimatab */,
+				2F9BFEDF142FF1440031A3CA /* darehimatabTests */,
+				2F9BFEBC142FF1440031A3CA /* Frameworks */,
+				2F9BFEBA142FF1440031A3CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F9BFEBA142FF1440031A3CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BFEB9142FF1440031A3CA /* darehimatab.app */,
+				2F9BFED7142FF1440031A3CA /* darehimatabTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F9BFEBC142FF1440031A3CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BFEBD142FF1440031A3CA /* UIKit.framework */,
+				2F9BFEBF142FF1440031A3CA /* Foundation.framework */,
+				2F9BFEC1142FF1440031A3CA /* CoreGraphics.framework */,
+				2F9BFED8142FF1440031A3CA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F9BFEC3142FF1440031A3CA /* darehimatab */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BFECC142FF1440031A3CA /* darehimatabAppDelegate.h */,
+				2F9BFECD142FF1440031A3CA /* darehimatabAppDelegate.m */,
+				2F9BFECF142FF1440031A3CA /* MainWindow.xib */,
+				2F9BFEC4142FF1440031A3CA /* Supporting Files */,
+				2F9BFEF5142FF3330031A3CA /* AboutViewController.h */,
+				2F9BFEF6142FF3330031A3CA /* AboutViewController.m */,
+				2F9BFEF7142FF3340031A3CA /* AboutView.xib */,
+				2F9BFEFB142FF4EB0031A3CA /* NavController.h */,
+				2F9BFEFC142FF4EB0031A3CA /* NavController.m */,
+				2F9BFF00142FF5DD0031A3CA /* himatableViewController.h */,
+				2F9BFF01142FF5DD0031A3CA /* himatableViewController.m */,
+				2F9BFF02142FF5DD0031A3CA /* himatableView.xib */,
+				2F9BFF05143008E70031A3CA /* himaDetailViewController.h */,
+				2F9BFF06143008E70031A3CA /* himaDetailViewController.m */,
+				2F9BFF07143008E70031A3CA /* himaDetailView.xib */,
+			);
+			path = darehimatab;
+			sourceTree = "<group>";
+		};
+		2F9BFEC4142FF1440031A3CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BFEC5142FF1440031A3CA /* darehimatab-Info.plist */,
+				2F9BFEC6142FF1440031A3CA /* InfoPlist.strings */,
+				2F9BFEC9142FF1440031A3CA /* main.m */,
+				2F9BFECB142FF1440031A3CA /* darehimatab-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F9BFEDF142FF1440031A3CA /* darehimatabTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BFEE5142FF1440031A3CA /* darehimatabTests.h */,
+				2F9BFEE7142FF1440031A3CA /* darehimatabTests.m */,
+				2F9BFEE0142FF1440031A3CA /* Supporting Files */,
+			);
+			path = darehimatabTests;
+			sourceTree = "<group>";
+		};
+		2F9BFEE0142FF1440031A3CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F9BFEE1142FF1440031A3CA /* darehimatabTests-Info.plist */,
+				2F9BFEE2142FF1440031A3CA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F9BFEB8142FF1440031A3CA /* darehimatab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F9BFEEB142FF1440031A3CA /* Build configuration list for PBXNativeTarget "darehimatab" */;
+			buildPhases = (
+				2F9BFEB5142FF1440031A3CA /* Sources */,
+				2F9BFEB6142FF1440031A3CA /* Frameworks */,
+				2F9BFEB7142FF1440031A3CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = darehimatab;
+			productName = darehimatab;
+			productReference = 2F9BFEB9142FF1440031A3CA /* darehimatab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F9BFED6142FF1440031A3CA /* darehimatabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F9BFEEE142FF1440031A3CA /* Build configuration list for PBXNativeTarget "darehimatabTests" */;
+			buildPhases = (
+				2F9BFED2142FF1440031A3CA /* Sources */,
+				2F9BFED3142FF1440031A3CA /* Frameworks */,
+				2F9BFED4142FF1440031A3CA /* Resources */,
+				2F9BFED5142FF1440031A3CA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F9BFEDE142FF1440031A3CA /* PBXTargetDependency */,
+			);
+			name = darehimatabTests;
+			productName = darehimatabTests;
+			productReference = 2F9BFED7142FF1440031A3CA /* darehimatabTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F9BFEB0142FF1430031A3CA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2F9BFEB3142FF1430031A3CA /* Build configuration list for PBXProject "darehimatab" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2F9BFEAE142FF1430031A3CA;
+			productRefGroup = 2F9BFEBA142FF1440031A3CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F9BFEB8142FF1440031A3CA /* darehimatab */,
+				2F9BFED6142FF1440031A3CA /* darehimatabTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F9BFEB7142FF1440031A3CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9BFEC8142FF1440031A3CA /* InfoPlist.strings in Resources */,
+				2F9BFED1142FF1440031A3CA /* MainWindow.xib in Resources */,
+				2F9BFEF9142FF3340031A3CA /* AboutView.xib in Resources */,
+				2F9BFF04142FF5DD0031A3CA /* himatableView.xib in Resources */,
+				2F9BFF09143008E70031A3CA /* himaDetailView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F9BFED4142FF1440031A3CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9BFEE4142FF1440031A3CA /* InfoPlist.strings in Resources */,
+				2F9BFEE6142FF1440031A3CA /* darehimatabTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F9BFED5142FF1440031A3CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F9BFEB5142FF1440031A3CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9BFECA142FF1440031A3CA /* main.m in Sources */,
+				2F9BFECE142FF1440031A3CA /* darehimatabAppDelegate.m in Sources */,
+				2F9BFEF8142FF3340031A3CA /* AboutViewController.m in Sources */,
+				2F9BFEFE142FF4EB0031A3CA /* NavController.m in Sources */,
+				2F9BFF03142FF5DD0031A3CA /* himatableViewController.m in Sources */,
+				2F9BFF08143008E70031A3CA /* himaDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F9BFED2142FF1440031A3CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9BFEE8142FF1440031A3CA /* darehimatabTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F9BFEDE142FF1440031A3CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F9BFEB8142FF1440031A3CA /* darehimatab */;
+			targetProxy = 2F9BFEDD142FF1440031A3CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F9BFEC6142FF1440031A3CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F9BFEC7142FF1440031A3CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F9BFECF142FF1440031A3CA /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F9BFED0142FF1440031A3CA /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		2F9BFEE2142FF1440031A3CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F9BFEE3142FF1440031A3CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F9BFEE9142FF1440031A3CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F9BFEEA142FF1440031A3CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F9BFEEC142FF1440031A3CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "darehimatab/darehimatab-Prefix.pch";
+				INFOPLIST_FILE = "darehimatab/darehimatab-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2F9BFEED142FF1440031A3CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "darehimatab/darehimatab-Prefix.pch";
+				INFOPLIST_FILE = "darehimatab/darehimatab-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2F9BFEEF142FF1440031A3CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/darehimatab.app/darehimatab";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "darehimatab/darehimatab-Prefix.pch";
+				INFOPLIST_FILE = "darehimatabTests/darehimatabTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2F9BFEF0142FF1440031A3CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/darehimatab.app/darehimatab";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "darehimatab/darehimatab-Prefix.pch";
+				INFOPLIST_FILE = "darehimatabTests/darehimatabTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F9BFEB3142FF1430031A3CA /* Build configuration list for PBXProject "darehimatab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9BFEE9142FF1440031A3CA /* Debug */,
+				2F9BFEEA142FF1440031A3CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F9BFEEB142FF1440031A3CA /* Build configuration list for PBXNativeTarget "darehimatab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9BFEEC142FF1440031A3CA /* Debug */,
+				2F9BFEED142FF1440031A3CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F9BFEEE142FF1440031A3CA /* Build configuration list for PBXNativeTarget "darehimatabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F9BFEEF142FF1440031A3CA /* Debug */,
+				2F9BFEF0142FF1440031A3CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F9BFEB0142FF1430031A3CA /* Project object */;
+}
