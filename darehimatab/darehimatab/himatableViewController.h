@@ -8,13 +8,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMLReader.h"
+
 @class HimaDetailViewController;
 
+
 @interface HimatableViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource>{
+    XMLReader *xmlcont;
     IBOutlet UITableView*himatableView;
     NSMutableArray *himaArray;
     HimaDetailViewController *himaDetailViewController;
+
 }
 @property(nonatomic,retain) HimaDetailViewController *himaDetailViewController;
 @property(nonatomic,retain) NSMutableArray *himaArray;
+@property(nonatomic,retain) XMLReader *xmlcont;
 @end

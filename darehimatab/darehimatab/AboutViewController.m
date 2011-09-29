@@ -9,6 +9,7 @@
 #import "AboutViewController.h"
 
 @implementation AboutViewController
+@synthesize mapview;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +34,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    lm = [[CLLocationManager alloc] init];
+    lm.delegate = self;
+    lm.desiredAccuracy = kCLLocationAccuracyHundredMeters;
+    lm.distanceFilter = kCLDistanceFilterNone;
+    [lm startUpdatingLocation];
+    [lm startUpdatingHeading];
+    
+    mapview.showsUserLocation = YES;
 }
 
 - (void)viewDidUnload

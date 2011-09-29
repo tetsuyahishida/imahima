@@ -15,6 +15,7 @@
 @synthesize window = _window;
 @synthesize rootController;
 @synthesize NavController;
+@synthesize AboutViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -65,7 +66,7 @@
 
 - (void)dealloc
 {
-    [NavController release];
+ //   [NavController autorelease];
     [rootController release];
     [_window release];
     [super dealloc];

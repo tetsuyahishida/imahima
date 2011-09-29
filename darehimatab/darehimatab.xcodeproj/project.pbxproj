@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F833030143304CF002B75E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F83302F143304CF002B75E2 /* MapKit.framework */; };
+		2F833033143304E7002B75E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F833032143304E7002B75E2 /* CoreLocation.framework */; };
 		2F9BFEBE142FF1440031A3CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEBD142FF1440031A3CA /* UIKit.framework */; };
 		2F9BFEC0142FF1440031A3CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEBF142FF1440031A3CA /* Foundation.framework */; };
 		2F9BFEC2142FF1440031A3CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEC1142FF1440031A3CA /* CoreGraphics.framework */; };
@@ -28,6 +30,8 @@
 		2F9BFF04142FF5DD0031A3CA /* himatableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9BFF02142FF5DD0031A3CA /* himatableView.xib */; };
 		2F9BFF08143008E70031A3CA /* himaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BFF06143008E70031A3CA /* himaDetailViewController.m */; };
 		2F9BFF09143008E70031A3CA /* himaDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9BFF07143008E70031A3CA /* himaDetailView.xib */; };
+		2F9BFF141430AEAF0031A3CA /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BFF131430AEAF0031A3CA /* XMLReader.m */; };
+		2F9BFF181432093F0031A3CA /* Hima.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9BFF171432093E0031A3CA /* Hima.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F83302F143304CF002B75E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2F833032143304E7002B75E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2F9BFEB9142FF1440031A3CA /* darehimatab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = darehimatab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9BFEBD142FF1440031A3CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F9BFEBF142FF1440031A3CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +75,10 @@
 		2F9BFF05143008E70031A3CA /* himaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = himaDetailViewController.h; sourceTree = "<group>"; };
 		2F9BFF06143008E70031A3CA /* himaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = himaDetailViewController.m; sourceTree = "<group>"; };
 		2F9BFF07143008E70031A3CA /* himaDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = himaDetailView.xib; sourceTree = "<group>"; };
+		2F9BFF121430AEAE0031A3CA /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		2F9BFF131430AEAF0031A3CA /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		2F9BFF161432093D0031A3CA /* Hima.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hima.h; sourceTree = "<group>"; };
+		2F9BFF171432093E0031A3CA /* Hima.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hima.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F833033143304E7002B75E2 /* CoreLocation.framework in Frameworks */,
+				2F833030143304CF002B75E2 /* MapKit.framework in Frameworks */,
 				2F9BFEBE142FF1440031A3CA /* UIKit.framework in Frameworks */,
 				2F9BFEC0142FF1440031A3CA /* Foundation.framework in Frameworks */,
 				2F9BFEC2142FF1440031A3CA /* CoreGraphics.framework in Frameworks */,
@@ -118,6 +130,8 @@
 		2F9BFEBC142FF1440031A3CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F833032143304E7002B75E2 /* CoreLocation.framework */,
+				2F83302F143304CF002B75E2 /* MapKit.framework */,
 				2F9BFEBD142FF1440031A3CA /* UIKit.framework */,
 				2F9BFEBF142FF1440031A3CA /* Foundation.framework */,
 				2F9BFEC1142FF1440031A3CA /* CoreGraphics.framework */,
@@ -132,7 +146,6 @@
 				2F9BFECC142FF1440031A3CA /* darehimatabAppDelegate.h */,
 				2F9BFECD142FF1440031A3CA /* darehimatabAppDelegate.m */,
 				2F9BFECF142FF1440031A3CA /* MainWindow.xib */,
-				2F9BFEC4142FF1440031A3CA /* Supporting Files */,
 				2F9BFEF5142FF3330031A3CA /* AboutViewController.h */,
 				2F9BFEF6142FF3330031A3CA /* AboutViewController.m */,
 				2F9BFEF7142FF3340031A3CA /* AboutView.xib */,
@@ -144,6 +157,11 @@
 				2F9BFF05143008E70031A3CA /* himaDetailViewController.h */,
 				2F9BFF06143008E70031A3CA /* himaDetailViewController.m */,
 				2F9BFF07143008E70031A3CA /* himaDetailView.xib */,
+				2F9BFF121430AEAE0031A3CA /* XMLReader.h */,
+				2F9BFF131430AEAF0031A3CA /* XMLReader.m */,
+				2F9BFF161432093D0031A3CA /* Hima.h */,
+				2F9BFF171432093E0031A3CA /* Hima.m */,
+				2F9BFEC4142FF1440031A3CA /* Supporting Files */,
 			);
 			path = darehimatab;
 			sourceTree = "<group>";
@@ -291,6 +309,8 @@
 				2F9BFEFE142FF4EB0031A3CA /* NavController.m in Sources */,
 				2F9BFF03142FF5DD0031A3CA /* himatableViewController.m in Sources */,
 				2F9BFF08143008E70031A3CA /* himaDetailViewController.m in Sources */,
+				2F9BFF141430AEAF0031A3CA /* XMLReader.m in Sources */,
+				2F9BFF181432093F0031A3CA /* Hima.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

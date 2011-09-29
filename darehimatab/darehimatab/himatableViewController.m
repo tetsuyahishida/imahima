@@ -9,9 +9,11 @@
 #import "himatableViewController.h"
 #import "himaDetailViewController.h"
 #import "darehimatabAppDelegate.h"
+#import "Hima.h"
 
 
 @implementation HimatableViewController
+@synthesize xmlcont;
 @synthesize himaArray;
 @synthesize himaDetailViewController;
 
@@ -38,11 +40,15 @@
 {
     [super viewDidLoad];
     
-    self.title=NSLocalizedString(@"books",@"himajins");
     
-    NSMutableArray *array = [[NSArray alloc] initWithObjects:@"ore",@"kimi",nil];
-    self.himaArray=array;
-    [array release];
+    self.title=NSLocalizedString(@"hima",@"himajins");
+    xmlcont = [[XMLReader alloc] loadXMLByURL:@"http://192.168.11.2/~tanakamaruo/imahima.xml"];
+    /*
+    for (Hima *t in [xmlcont himas]){
+        NSLog(@"ID: %@ name: %@",[t createdAt],[t content]);
+    }
+    */
+    [self.tableView reloadData];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -88,16 +94,15 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.himaArray count];
+    NSMutableArray *ar =[xmlcont himas];
+    return [ar count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -106,13 +111,15 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Configure the cell...
-    NSInteger row = [indexPath row];
-    cell.text=[himaArray objectAtIndex:row];
+    NSMutableArray *cont =[xmlcont himas];
+    Hima *current = [cont objectAtIndex:indexPath.row];
     
+    cell.detailTextLabel.text = [current createdAt];
+    cell.textLabel.text = [current content];
     
     return cell;
 }
