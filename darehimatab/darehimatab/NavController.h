@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface NavController : UINavigationController{
-    
+    NSString *facebook_id;
+    NSString *facebook_name;
+    NSString *facebook_photo_url;
+    NSString *latitude;
+    NSString *longitude;
+    NSString *time;
+
+
 }
 
 @end

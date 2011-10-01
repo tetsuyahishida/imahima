@@ -9,11 +9,19 @@
 #import <Foundation/Foundation.h>
 
 @interface Hima: NSObject{
-    NSString *content;
-    NSString *createdAt;
+    NSString *facebook_id;
+    NSString *facebook_name;
+    NSString *facebook_photo_url;
+    NSString *latitude;
+    NSString *longitude;
+    NSString *time;
+       
 }
-@property(nonatomic,retain) NSString *content;
-@property(nonatomic,retain) NSString *createdAt;
-
+@property(nonatomic,retain) NSString *facebook_id;
+@property(nonatomic,retain) NSString *facebook_name;
+@property(nonatomic,retain) NSString *facebook_photo_url;
+@property(nonatomic,retain) NSString *latitude;
+@property(nonatomic,retain) NSString *longitude;
+@property(nonatomic,retain) NSString *time;
 
 @end

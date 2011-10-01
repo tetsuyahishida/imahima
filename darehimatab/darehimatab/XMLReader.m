@@ -31,11 +31,23 @@
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
     if([elementName isEqualToString:@"facebook_id"]){
-        currentHima.content =currentNodeContent;
+        currentHima.facebook_id =currentNodeContent;
     }
     if([elementName isEqualToString:@"facebook_name"]){
-        currentHima.createdAt =currentNodeContent;
-    }    
+        currentHima.facebook_name =currentNodeContent;
+    }
+    if([elementName isEqualToString:@"facebook_photo_url"]){
+        currentHima.facebook_photo_url =currentNodeContent;
+    }
+    if([elementName isEqualToString:@"latitude"]){
+        currentHima.latitude =currentNodeContent;
+    }
+    if([elementName isEqualToString:@"longtitude"]){
+        currentHima.longitude=currentNodeContent;
+    }
+    if([elementName isEqualToString:@"time"]){
+        currentHima.time=currentNodeContent;
+    }
     if([elementName isEqualToString:@"friend"]){
         [himas addObject:currentHima];
         [currentHima release];

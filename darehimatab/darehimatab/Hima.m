@@ -9,7 +9,7 @@
 #import "Hima.h"
 
 @implementation Hima
-@synthesize content, createdAt;
+@synthesize facebook_id,facebook_name,facebook_photo_url,latitude,longitude,time;
 
 
 @end

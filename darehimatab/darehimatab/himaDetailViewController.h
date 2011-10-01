@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HimaDetailViewController : UIViewController
+@interface HimaDetailViewController : UIViewController{
+    IBOutlet UILabel *nameLabel;
+    NSString *the_facebook_name;
+}
 
+@property(nonatomic, retain) NSString*the_facebook_name;
 @end

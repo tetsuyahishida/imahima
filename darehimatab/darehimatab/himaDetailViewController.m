@@ -7,8 +7,10 @@
 //
 
 #import "himaDetailViewController.h"
+#import "himatableViewController.h"
 
 @implementation HimaDetailViewController
+@synthesize the_facebook_name;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +35,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    nameLabel.text = the_facebook_name;
 }
 
 - (void)viewDidUnload

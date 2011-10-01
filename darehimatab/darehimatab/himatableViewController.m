@@ -16,6 +16,7 @@
 @synthesize xmlcont;
 @synthesize himaArray;
 @synthesize himaDetailViewController;
+@synthesize current;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -39,22 +40,37 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//Facebookのaccesstokenを保管する    
+    NSUserDefaults *defaults =[NSUserDefaults standardUserDefaults];
+    [defaults setObject:@"123456789" forKey:@"accesstoken"];
     
     
+    
+    NSString *myurl
+    =[NSString stringWithString:@"http://157.82.4.63/~tanakamaruo/imahima.xml"];
     self.title=NSLocalizedString(@"hima",@"himajins");
-    xmlcont = [[XMLReader alloc] loadXMLByURL:@"http://192.168.11.2/~tanakamaruo/imahima.xml"];
-    /*
+    xmlcont = [[XMLReader alloc] loadXMLByURL:myurl];
+    
+    
+/*とりあえずはローカルを見るようにする
+    NSString *myurl
+    =[NSString stringWithFormat:@"https://hoge/imahima.xml?facebookid=%d"];
+    self.title=NSLocalizedString(@"hima",@"himajins");
+    xmlcont = [[XMLReader alloc] loadXMLByURL:myurl];
+*/
     for (Hima *t in [xmlcont himas]){
-        NSLog(@"ID: %@ name: %@",[t createdAt],[t content]);
+        NSLog(@"ID: %@ name: %@",[t facebook_id],[t time]);
+        himaArray = [xmlcont himas];
     }
-    */
-    [self.tableView reloadData];
+
+
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView reloadData];
 }
 
 - (void)viewDidUnload
@@ -67,6 +83,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -116,10 +133,11 @@
     
     // Configure the cell...
     NSMutableArray *cont =[xmlcont himas];
-    Hima *current = [cont objectAtIndex:indexPath.row];
+    current = [cont objectAtIndex:indexPath.row];
     
-    cell.detailTextLabel.text = [current createdAt];
-    cell.textLabel.text = [current content];
+    cell.detailTextLabel.text = [current time];
+    cell.textLabel.text = [current facebook_name];
+    
     
     return cell;
 }
@@ -167,19 +185,23 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger row = [indexPath row];
+//    NSInteger row = [indexPath row];
 
-    if (self.himaDetailViewController == nil){
+
         HimaDetailViewController *detailViewController = [[HimaDetailViewController alloc] initWithNibName:@"himaDetailView" bundle:nil];
-        // ...
-        // Pass the selected object to the new view controller.
-        [self.navigationController pushViewController:detailViewController animated:YES];
-        [detailViewController release];
-    }
-    himaDetailViewController.title = [NSString stringWithFormat:@"%d",[himaArray objectAtIndex:row]];
+
+        darehimatabAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        [delegate.NavController pushViewController:himaDetailViewController animated:YES];
+        NSMutableArray *cont =[xmlcont himas];
+        current = [cont objectAtIndex:indexPath.row];
     
-    darehimatabAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [delegate.NavController pushViewController:himaDetailViewController animated:YES];
+        detailViewController.the_facebook_name =[current facebook_name];
+        detailViewController.title = [current facebook_id];
+        // ...
+    // Pass the selected object to the new view controller.
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    
+    [detailViewController release];
                                         
     // Navigation logic may go here. Create and push another view controller.
 
