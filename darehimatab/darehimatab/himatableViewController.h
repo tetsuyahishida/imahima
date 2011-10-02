@@ -9,6 +9,7 @@
 
 #import <UIKit/UIKit.h>
 #import "XMLReader.h"
+#import "LoginViewController.h"
 
 @class HimaDetailViewController;
 @class Hima;

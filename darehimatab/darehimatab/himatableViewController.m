@@ -43,13 +43,14 @@
 {
     [super viewDidLoad];
 //Facebookのaccesstokenを保管する 
-   if([defaults.objectForKey:@"accesstoken"].text.length){
-//        
-//    }
-    
+   if(![defaults stringForKey:@"accesstoken"]){
+       LoginViewController *asker = [[LoginViewController alloc] init];
+
+       [self presentModalViewController:asker animated:YES];
+       [asker release];
     defaults =[NSUserDefaults standardUserDefaults];
     [defaults setObject:@"AAADT6GomCWwBAMnWqQm4WSACxZAbbtNNqVCP3j9PieDsQWy3wrs7goQwhMP4kzZA8HzMBzApcB9kD7g92BzRDnacjULRAZD" forKey:@"accesstoken"];
-    
+}    
     
     
     NSString *myurl
