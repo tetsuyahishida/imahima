@@ -11,6 +11,7 @@
 
 @implementation HimaDetailViewController
 @synthesize the_facebook_name;
+@synthesize the_facebook_image_url;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,10 +37,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     nameLabel.text = the_facebook_name;
+    NSURL *imageurl = [NSURL URLWithString: the_facebook_image_url];
+    NSData *myData = [NSData dataWithContentsOfURL:imageurl];
+    UIImage *myImage = [UIImage imageWithData:myData];
+    facebook_image.image = myImage;
 }
 
 - (void)viewDidUnload
 {
+    [facebook_image release];
+    facebook_image = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -51,4 +58,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)dealloc {
+    [facebook_image release];
+    [super dealloc];
+}
 @end

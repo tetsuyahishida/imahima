@@ -8,19 +8,19 @@
 
 #import <UIKit/UIKit.h>
 @class NavController;
-@class AboutViewController;
+@class mapviewController;
 
 @interface darehimatabAppDelegate : NSObject <UIApplicationDelegate>{
     UIWindow *window;
     IBOutlet UITabBarController *rootController;
     IBOutlet NavController *NavController;
-    IBOutlet AboutViewController *AboutViewController;
+    IBOutlet mapviewController *mapviewController;
     
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *rootController;
 @property (nonatomic, retain) NavController *NavController;
-@property (nonatomic, retain) IBOutlet AboutViewController *AboutViewController;
+@property (nonatomic, retain) IBOutlet mapviewController *mapviewController;
 
 @end

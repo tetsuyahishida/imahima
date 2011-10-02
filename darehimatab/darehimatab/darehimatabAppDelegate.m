@@ -15,7 +15,7 @@
 @synthesize window = _window;
 @synthesize rootController;
 @synthesize NavController;
-@synthesize AboutViewController;
+@synthesize mapviewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

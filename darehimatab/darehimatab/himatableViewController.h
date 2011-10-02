@@ -20,10 +20,12 @@
     NSMutableArray *himaArray;
     HimaDetailViewController *himaDetailViewController;
     Hima *current;
+    NSUserDefaults *defaults;
 
 }
 @property(nonatomic,retain) HimaDetailViewController *himaDetailViewController;
 @property(nonatomic,retain) NSMutableArray *himaArray;
 @property(nonatomic,retain) XMLReader *xmlcont;
 @property(nonatomic,retain) Hima *current;
+@property(nonatomic,retain) NSUserDefaults *defaults;
 @end

@@ -23,7 +23,7 @@
 
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
-    if([elementName isEqualToString:@"friend"]){
+    if([elementName isEqualToString:@"user"]){
         currentHima =[Hima alloc];
         currentNodeContent=[[NSMutableArray alloc] init];
     }
@@ -33,10 +33,10 @@
     if([elementName isEqualToString:@"facebook_id"]){
         currentHima.facebook_id =currentNodeContent;
     }
-    if([elementName isEqualToString:@"facebook_name"]){
+    if([elementName isEqualToString:@"name"]){
         currentHima.facebook_name =currentNodeContent;
     }
-    if([elementName isEqualToString:@"facebook_photo_url"]){
+    if([elementName isEqualToString:@"photo_url"]){
         currentHima.facebook_photo_url =currentNodeContent;
     }
     if([elementName isEqualToString:@"latitude"]){
@@ -45,10 +45,27 @@
     if([elementName isEqualToString:@"longtitude"]){
         currentHima.longitude=currentNodeContent;
     }
-    if([elementName isEqualToString:@"time"]){
+    if([elementName isEqualToString:@"imahima_time"]){
+//        
+//        NSDateFormatter *inputDateFormatter = [[NSDateFormatter alloc] init];
+//        [inputDateFormatter setDateFormat:@"yyyy-MM-ddHH:mm:ss+Z"];
+//        NSString*inputtext=
+//        [currentNodeContent stringByReplacingOccurrencesOfString:@"T" withString:@""];
+//
+//        NSString *intputDateStr = inputtext;
+//        NSDate *inputDate = [inputDateFormatter dateFromString:intputDateStr];
+//        
+//        NSDateFormatter *outputDateFormatter = [[NSDateFormatter alloc] init];
+//        NSString *outputDateFormatterStr = @"yyyy/MM/dd HH:mm:ss";
+//        [outputDateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"JST"]];
+//        [outputDateFormatter setDateFormat:outputDateFormatterStr];
+//        NSString *outputDateStr = [outputDateFormatter stringFromDate:inputDate];
+//        NSLog(@"[in]%@ -> [out]%@(%@)", intputDateStr, outputDateStr, outputDateFormatterStr);
+//        [inputDateFormatter release];
+//        [outputDateFormatter release];
         currentHima.time=currentNodeContent;
     }
-    if([elementName isEqualToString:@"friend"]){
+    if([elementName isEqualToString:@"user"]){
         [himas addObject:currentHima];
         [currentHima release];
         currentHima = nil;

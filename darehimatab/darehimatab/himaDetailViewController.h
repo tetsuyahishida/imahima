@@ -11,7 +11,11 @@
 @interface HimaDetailViewController : UIViewController{
     IBOutlet UILabel *nameLabel;
     NSString *the_facebook_name;
+    IBOutlet UIImageView *facebook_image;
+    NSString *the_facebook_image_url;
+    
 }
 
 @property(nonatomic, retain) NSString*the_facebook_name;
+@property(nonatomic, retain) NSString *the_facebook_image_url;
 @end

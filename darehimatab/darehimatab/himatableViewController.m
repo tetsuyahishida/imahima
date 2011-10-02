@@ -11,12 +11,14 @@
 #import "darehimatabAppDelegate.h"
 #import "Hima.h"
 
+@class NSUserDefaults;
 
 @implementation HimatableViewController
 @synthesize xmlcont;
 @synthesize himaArray;
 @synthesize himaDetailViewController;
 @synthesize current;
+@synthesize defaults;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -40,14 +42,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//Facebookのaccesstokenを保管する    
-    NSUserDefaults *defaults =[NSUserDefaults standardUserDefaults];
-    [defaults setObject:@"123456789" forKey:@"accesstoken"];
+//Facebookのaccesstokenを保管する 
+   if([defaults.objectForKey:@"accesstoken"].text.length){
+//        
+//    }
+    
+    defaults =[NSUserDefaults standardUserDefaults];
+    [defaults setObject:@"AAADT6GomCWwBAMnWqQm4WSACxZAbbtNNqVCP3j9PieDsQWy3wrs7goQwhMP4kzZA8HzMBzApcB9kD7g92BzRDnacjULRAZD" forKey:@"accesstoken"];
     
     
     
     NSString *myurl
-    =[NSString stringWithString:@"http://157.82.4.63/~tanakamaruo/imahima.xml"];
+    =[NSString stringWithFormat:@"http://49.212.4.124:3000/top/imahima_list?access_token=%@",[defaults stringForKey:@"accesstoken"]];
     self.title=NSLocalizedString(@"hima",@"himajins");
     xmlcont = [[XMLReader alloc] loadXMLByURL:myurl];
     
@@ -197,6 +203,7 @@
     
         detailViewController.the_facebook_name =[current facebook_name];
         detailViewController.title = [current facebook_id];
+        detailViewController.the_facebook_image_url = [current facebook_photo_url];
         // ...
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
