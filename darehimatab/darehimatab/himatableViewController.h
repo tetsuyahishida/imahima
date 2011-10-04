@@ -15,7 +15,7 @@
 @class Hima;
 
 
-@interface HimatableViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource>{
+@interface HimatableViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource,LoginViewControllerDelegate>{
     XMLReader *xmlcont;
     IBOutlet UITableView*himatableView;
     NSMutableArray *himaArray;

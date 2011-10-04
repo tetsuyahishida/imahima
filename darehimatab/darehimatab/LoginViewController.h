@@ -10,10 +10,17 @@
 
 @protocol LoginViewControllerDelegate;
 
-@interface LoginViewController : UIViewController{
-
+@interface LoginViewController : UIViewController<UIApplicationDelegate,UIWebViewDelegate>{
+    NSString *currenturl;
+    NSString *access_token;
+    IBOutlet UIWebView *login_View;
 	id <LoginViewControllerDelegate> delegate;
 }
 @property (assign) id <LoginViewControllerDelegate> delegate;
+@property (nonatomic,retain) NSString *currenturl;
+@property (nonatomic,retain) NSString *access_token;
 
+@end
+@protocol LoginViewControllerDelegate
+- (void)loginViewController:(LoginViewController *)sender request:(UIWebView *)aWebView andget:(NSString *)thecode;
 @end

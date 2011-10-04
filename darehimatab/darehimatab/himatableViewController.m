@@ -28,6 +28,18 @@
     }
     return self;
 }
+- (void)loginViewController:(LoginViewController *)sender request:(UIWebView *)aWebView andget:(NSString *)thecode
+{
+	[self dismissModalViewControllerAnimated:YES];
+    //キーを保存
+    defaults =[NSUserDefaults standardUserDefaults];
+    [defaults setObject:thecode forKey:@"accesstoken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSString *myurl
+    =[NSString stringWithFormat:@"http://49.212.4.124:3000/top/imahima_list?access_token=%@",[defaults stringForKey:@"accesstoken"]];
+    self.title=NSLocalizedString(@"hima",@"himajins");
+    xmlcont = [[XMLReader alloc] loadXMLByURL:myurl];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -45,12 +57,10 @@
 //Facebookのaccesstokenを保管する 
    if(![defaults stringForKey:@"accesstoken"]){
        LoginViewController *asker = [[LoginViewController alloc] init];
-
+       asker.delegate = self;
        [self presentModalViewController:asker animated:YES];
        [asker release];
-    defaults =[NSUserDefaults standardUserDefaults];
-    [defaults setObject:@"AAADT6GomCWwBAMnWqQm4WSACxZAbbtNNqVCP3j9PieDsQWy3wrs7goQwhMP4kzZA8HzMBzApcB9kD7g92BzRDnacjULRAZD" forKey:@"accesstoken"];
-}    
+   }    
     
     
     NSString *myurl
