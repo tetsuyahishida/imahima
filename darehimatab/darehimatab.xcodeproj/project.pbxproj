@@ -15,6 +15,8 @@
 		2F80C6911438A4D30059BB34 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F80C68F1438A4D20059BB34 /* LoginView.xib */; };
 		2F833030143304CF002B75E2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F83302F143304CF002B75E2 /* MapKit.framework */; };
 		2F833033143304E7002B75E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F833032143304E7002B75E2 /* CoreLocation.framework */; };
+		2F87AE0B143A9DA900942FFC /* HimaButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87AE09143A9DA900942FFC /* HimaButtonViewController.m */; };
+		2F87AE0C143A9DA900942FFC /* HimaButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F87AE0A143A9DA900942FFC /* HimaButtonViewController.xib */; };
 		2F9BFEBE142FF1440031A3CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEBD142FF1440031A3CA /* UIKit.framework */; };
 		2F9BFEC0142FF1440031A3CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEBF142FF1440031A3CA /* Foundation.framework */; };
 		2F9BFEC2142FF1440031A3CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9BFEC1142FF1440031A3CA /* CoreGraphics.framework */; };
@@ -62,6 +64,9 @@
 		2F80C68F1438A4D20059BB34 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		2F83302F143304CF002B75E2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2F833032143304E7002B75E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2F87AE08143A9DA900942FFC /* HimaButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HimaButtonViewController.h; sourceTree = "<group>"; };
+		2F87AE09143A9DA900942FFC /* HimaButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HimaButtonViewController.m; sourceTree = "<group>"; };
+		2F87AE0A143A9DA900942FFC /* HimaButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HimaButtonViewController.xib; sourceTree = "<group>"; };
 		2F9BFEB9142FF1440031A3CA /* darehimatab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = darehimatab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9BFEBD142FF1440031A3CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F9BFEBF142FF1440031A3CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -179,6 +184,9 @@
 				2F80C68D1438A4D10059BB34 /* LoginViewController.h */,
 				2F80C68E1438A4D10059BB34 /* LoginViewController.m */,
 				2F80C68F1438A4D20059BB34 /* LoginView.xib */,
+				2F87AE08143A9DA900942FFC /* HimaButtonViewController.h */,
+				2F87AE09143A9DA900942FFC /* HimaButtonViewController.m */,
+				2F87AE0A143A9DA900942FFC /* HimaButtonViewController.xib */,
 			);
 			path = darehimatab;
 			sourceTree = "<group>";
@@ -292,6 +300,7 @@
 				2F9BFF04142FF5DD0031A3CA /* himatableView.xib in Resources */,
 				2F80C67D14389BAB0059BB34 /* himaDetailView.xib in Resources */,
 				2F80C6911438A4D30059BB34 /* LoginView.xib in Resources */,
+				2F87AE0C143A9DA900942FFC /* HimaButtonViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +348,7 @@
 				2F80C5FB14376DBC0059BB34 /* Article.m in Sources */,
 				2F80C5FE14376E160059BB34 /* Annotation.m in Sources */,
 				2F80C6901438A4D30059BB34 /* LoginViewController.m in Sources */,
+				2F87AE0B143A9DA900942FFC /* HimaButtonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

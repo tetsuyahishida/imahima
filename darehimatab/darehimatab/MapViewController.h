@@ -10,14 +10,10 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@class AppData,Article,Annotation;
-
 @interface mapviewController :UIViewController<CLLocationManagerDelegate>{
     CLLocationManager *lm;
     MKMapView *mapView;
-    AppData *AppData;
-    Article *anArticle;
-    Annotation *currentAnnotation;
+
 }
 
 @property(nonatomic, retain) IBOutlet MKMapView *mapView;

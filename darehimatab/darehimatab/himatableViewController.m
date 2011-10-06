@@ -36,7 +36,7 @@
     [defaults setObject:thecode forKey:@"accesstoken"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     NSString *myurl
-    =[NSString stringWithFormat:@"http://49.212.4.124:3000/top/imahima_list?access_token=%@",[defaults stringForKey:@"accesstoken"]];
+    =[NSString stringWithFormat:@"http://49.212.4.124:3000/top/imahima_list.xml?access_token=%@",[defaults stringForKey:@"accesstoken"]];
     self.title=NSLocalizedString(@"hima",@"himajins");
     xmlcont = [[XMLReader alloc] loadXMLByURL:myurl];
 }
@@ -64,10 +64,10 @@
     
     
     NSString *myurl
-    =[NSString stringWithFormat:@"http://49.212.4.124:3000/top/imahima_list?access_token=%@",[defaults stringForKey:@"accesstoken"]];
+    =[NSString stringWithFormat:@"http://49.212.4.124:3000/top/imahima_list.xml?access_token=%@",[defaults stringForKey:@"accesstoken"]];
     self.title=NSLocalizedString(@"hima",@"himajins");
     xmlcont = [[XMLReader alloc] loadXMLByURL:myurl];
-    
+  
     
 /*とりあえずはローカルを見るようにする
     NSString *myurl

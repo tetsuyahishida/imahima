@@ -7,9 +7,9 @@
 //
 
 #import "MapviewController.h"
-#import "Article.h"
+#import "himaDetailViewController.h"
+#import "himatableViewController.h"
 
-#import "AppData.h"
 
 @implementation mapviewController
 @synthesize mapView;

@@ -37,7 +37,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSURL *myURL = [NSURL URLWithString:@"http://49.212.4.124:3000/"];
+    NSURL *myURL = [NSURL URLWithString:@"https://graph.facebook.com/oauth/authorize?client_id=232995166751084&redirect_uri=http://49.212.4.124:3000/oauth/redirect&scope=user_photos,friends_photos,offline_access,sms"];
     NSURLRequest *myURLReq = [NSURLRequest requestWithURL:myURL];
     [login_View loadRequest:myURLReq];
 

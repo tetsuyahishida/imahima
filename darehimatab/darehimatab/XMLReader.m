@@ -24,6 +24,7 @@
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
     if([elementName isEqualToString:@"user"]){
+//curentHima は現在暇な人のHimaクラスを継承したもの
         currentHima =[Hima alloc];
         currentNodeContent=[[NSMutableArray alloc] init];
     }
