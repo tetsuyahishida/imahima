@@ -17,5 +17,5 @@
 }
 @property(readonly,retain) NSMutableArray *himas;
 -(id) loadXMLByURL:(NSString *)urlString;
-
+-(void)NetworkIndicate;
 @end

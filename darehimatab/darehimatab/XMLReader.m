@@ -13,24 +13,42 @@
 @synthesize himas;
 -(id)loadXMLByURL:(NSString *)urlString
 {
+
+
     himas       =[[NSMutableArray alloc]init];
     NSURL *url  =[NSURL URLWithString:urlString];
     parser      =[[NSXMLParser alloc]initWithContentsOfURL:url];
     parser.delegate=self;
     [parser parse];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible=NO;
     return self;
-}
+    
+}        
 
+
+-(void)NetworkIndicate
+{
+    UIApplication *application = [UIApplication sharedApplication];
+	application.networkActivityIndicatorVisible = YES;
+
+}
 -(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
     if([elementName isEqualToString:@"user"]){
-//curentHima は現在暇な人のHimaクラスを継承したもの
+//curentHimaはHima.classオブジェクト
         currentHima =[Hima alloc];
         currentNodeContent=[[NSMutableArray alloc] init];
     }
 }
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
-{
+{   
+    if([elementName isEqualToString:@"access_token"]){
+        currentHima.accesstoken =currentNodeContent;
+        
+        NSUserDefaults*defaults =[NSUserDefaults standardUserDefaults];
+        [defaults setObject:currentNodeContent forKey:@"accesstoken"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
     if([elementName isEqualToString:@"facebook_id"]){
         currentHima.facebook_id =currentNodeContent;
     }
@@ -43,7 +61,7 @@
     if([elementName isEqualToString:@"latitude"]){
         currentHima.latitude =currentNodeContent;
     }
-    if([elementName isEqualToString:@"longtitude"]){
+    if([elementName isEqualToString:@"longitude"]){
         currentHima.longitude=currentNodeContent;
     }
     if([elementName isEqualToString:@"imahima_time"]){

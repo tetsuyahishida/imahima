@@ -19,6 +19,15 @@
 @synthesize himaDetailViewController;
 @synthesize current;
 @synthesize defaults;
+@synthesize himatableView;
+
+
+-(void)darehimatabAppReload:(darehimatabAppDelegate *)sender
+{
+    himatableView.dataSource =self;
+    himatableView.delegate =self;
+    [self.tableView reloadData];
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -32,13 +41,37 @@
 {
 	[self dismissModalViewControllerAnimated:YES];
     //キーを保存
-    defaults =[NSUserDefaults standardUserDefaults];
-    [defaults setObject:thecode forKey:@"accesstoken"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSString *userinfourl
+    =[NSString stringWithFormat:@"http://49.212.4.124:3000/top/user_info.xml"];
+
+    xmlcont = [[XMLReader alloc] loadXMLByURL:userinfourl];
+
+//    NSMutableArray *cont =[xmlcont himas];
+//    current = [cont objectAtIndex:0];
+    
+//    defaults =[NSUserDefaults standardUserDefaults];
+//    [defaults setObject:thecode forKey:@"accesstoken"];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+    dispatch_queue_t downloadQueue = dispatch_queue_create("XMLDownloader", NULL);
+    dispatch_async(downloadQueue, ^{
+        dispatch_async(dispatch_get_main_queue(),^{
+            UIApplication *application = [UIApplication sharedApplication];
+            application.networkActivityIndicatorVisible = YES;
+        });
+    });
+    [self performSelector: @selector(reloadHimaTableView) 
+               withObject: nil 
+               afterDelay: 0];
+    return;
+}
+
+-(void)reloadHimaTableView
+{
     NSString *myurl
     =[NSString stringWithFormat:@"http://49.212.4.124:3000/top/imahima_list.xml?access_token=%@",[defaults stringForKey:@"accesstoken"]];
-    self.title=NSLocalizedString(@"hima",@"himajins");
+    self.title=NSLocalizedString(@"We Are ひま!",@"HimaList");
     xmlcont = [[XMLReader alloc] loadXMLByURL:myurl];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,23 +84,30 @@
 
 #pragma mark - View lifecycle
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//Facebookのaccesstokenを保管する 
-   if(![defaults stringForKey:@"accesstoken"]){
+    
+
+
+//Facebookのaccesstokenを保管する
+    defaults=[NSUserDefaults standardUserDefaults];
+    if(![defaults stringForKey:@"accesstoken"]){
        LoginViewController *asker = [[LoginViewController alloc] init];
        asker.delegate = self;
+    UIApplication*application =[UIApplication sharedApplication];application.networkActivityIndicatorVisible = YES;
        [self presentModalViewController:asker animated:YES];
        [asker release];
-   }    
-    
-    
-    NSString *myurl
-    =[NSString stringWithFormat:@"http://49.212.4.124:3000/top/imahima_list.xml?access_token=%@",[defaults stringForKey:@"accesstoken"]];
-    self.title=NSLocalizedString(@"hima",@"himajins");
-    xmlcont = [[XMLReader alloc] loadXMLByURL:myurl];
-  
+    }
+    else{
+        UIApplication*application =[UIApplication sharedApplication];application.networkActivityIndicatorVisible = YES;
+        self.title=NSLocalizedString(@"We Are ひま!",@"HimaList");
+        [self performSelector: @selector(reloadHimaTableView) 
+                   withObject: nil 
+                   afterDelay: 2];
+    }
     
 /*とりあえずはローカルを見るようにする
     NSString *myurl
@@ -87,8 +127,9 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [self.tableView reloadData];
+//    [self.tableView reloadData];
 }
+    
 
 - (void)viewDidUnload
 {
@@ -100,7 +141,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-
+//    [self.tableView reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -134,6 +175,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    section = 1;
     // Return the number of rows in the section.
     NSMutableArray *ar =[xmlcont himas];
     return [ar count];
@@ -151,13 +193,13 @@
     // Configure the cell...
     NSMutableArray *cont =[xmlcont himas];
     current = [cont objectAtIndex:indexPath.row];
-    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.detailTextLabel.text = [current time];
     cell.textLabel.text = [current facebook_name];
-    
-    
+//    [super dataSourceDidFinishLoadingNewData];
+
     return cell;
-}
+   }
 
 /*
 // Override to support conditional editing of the table view.
@@ -212,9 +254,12 @@
         NSMutableArray *cont =[xmlcont himas];
         current = [cont objectAtIndex:indexPath.row];
     
-        detailViewController.the_facebook_name =[current facebook_name];
-        detailViewController.title = [current facebook_id];
+        detailViewController.the_facebook_name =[current time];
+        detailViewController.title = [current facebook_name];
         detailViewController.the_facebook_image_url = [current facebook_photo_url];
+        detailViewController.latitude = [current latitude];
+        detailViewController.longitude = [current longitude]; 
+    
         // ...
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
@@ -226,6 +271,7 @@
 }
 -(void)dealloc{
     [himaDetailViewController release];
+    [self.tableView autorelease];
     [super dealloc];
     
 }

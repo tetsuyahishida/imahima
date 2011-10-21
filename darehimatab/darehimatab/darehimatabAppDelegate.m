@@ -8,22 +8,41 @@
 
 #import "darehimatabAppDelegate.h"
 #import "NavController.h"
+#import "LoginViewController.h"
+#import "himatableViewController.h"
 
 @implementation darehimatabAppDelegate
-
 
 @synthesize window = _window;
 @synthesize rootController;
 @synthesize NavController;
 @synthesize mapviewController;
+@synthesize htvc;
+@synthesize delegate;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+   [[UIApplication sharedApplication]setApplicationIconBadgeNumber:0];
     [self.window addSubview:rootController.view];
     [self.window makeKeyAndVisible];
+
     return YES;
+
 }
+
+
+-(IBAction)reloadList:(id)sender{
+//    defaults=[NSUserDefaults standardUserDefaults];
+//        NSString *myurl
+//        =[NSString stringWithFormat:@"http://49.212.4.124:3000/top/imahima_list.xml?access_token=%@",[defaults stringForKey:@"accesstoken"]];  
+//    htvc.title=NSLocalizedString(@"We Are Hima!",@"himajins");
+//        xmlcont = [[XMLReader alloc] loadXMLByURL:myurl];
+//    [htvc.tableView reloadData];
+    self.delegate= [[HimatableViewController alloc]init ];
+    [self.delegate darehimatabAppReload:self];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -71,5 +90,6 @@
     [_window release];
     [super dealloc];
 }
+
 
 @end

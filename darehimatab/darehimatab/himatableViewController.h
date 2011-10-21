@@ -10,12 +10,14 @@
 #import <UIKit/UIKit.h>
 #import "XMLReader.h"
 #import "LoginViewController.h"
+#import "darehimatabAppDelegate.h"
+#import "PullToRefreshTableViewController.h"
 
 @class HimaDetailViewController;
 @class Hima;
 
 
-@interface HimatableViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource,LoginViewControllerDelegate>{
+@interface HimatableViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource,LoginViewControllerDelegate,DarehimatabAppReloadDelegate>{
     XMLReader *xmlcont;
     IBOutlet UITableView*himatableView;
     NSMutableArray *himaArray;
@@ -29,4 +31,11 @@
 @property(nonatomic,retain) XMLReader *xmlcont;
 @property(nonatomic,retain) Hima *current;
 @property(nonatomic,retain) NSUserDefaults *defaults;
+@property(nonatomic,retain) UITableView *himatableView;
+
+-(void)reloadHimaTableView;
+
 @end
+
+
+

@@ -7,16 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+@class XMLReader;
 
 @interface NavController : UINavigationController{
-    NSString *facebook_id;
-    NSString *facebook_name;
-    NSString *facebook_photo_url;
-    NSString *latitude;
-    NSString *longitude;
-    NSString *time;
-
+//    NSString *facebook_id;
+//    NSString *facebook_name;
+//    NSString *facebook_photo_url;
+//    NSString *latitude;
+//    NSString *longitude;
+//    NSString *time;
+//
+        XMLReader *xmlcont;
 
 }
+@property(nonatomic, retain)XMLReader *xmlcont;
 
 @end

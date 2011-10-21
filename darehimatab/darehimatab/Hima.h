@@ -15,6 +15,7 @@
     NSString *latitude;
     NSString *longitude;
     NSString *time;
+    NSString *accesstoken;
        
 }
 @property(nonatomic,retain) NSString *facebook_id;
@@ -23,5 +24,6 @@
 @property(nonatomic,retain) NSString *latitude;
 @property(nonatomic,retain) NSString *longitude;
 @property(nonatomic,retain) NSString *time;
+@property(nonatomic,retain) NSString *accesstoken;
 
 @end

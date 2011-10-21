@@ -7,8 +7,12 @@
 //
 
 #import "NavController.h"
+#import "himatableViewController.h"
+#import "XMLReader.h"
 
 @implementation NavController
+@synthesize xmlcont;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,7 +38,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-
 - (void)viewDidUnload
 {
     [super viewDidUnload];
