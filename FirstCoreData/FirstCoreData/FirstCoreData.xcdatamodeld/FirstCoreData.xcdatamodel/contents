@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="562" systemVersion="11B26" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Himajin" representedClassName="Event">
+        <attribute name="timeStamp" optional="YES" attributeType="Date"/>
+        <fetchedProperty name="fetchedProperty" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest"/>
+        </fetchedProperty>
+    </entity>
+    <elements>
+        <element name="Himajin" positionX="261" positionY="189" width="128" height="89"/>
+    </elements>
+</model>
