@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F7EBF22145C4EDD000354F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7EBF21145C4EDD000354F8 /* UIKit.framework */; };
+		2F7EBF24145C4EDD000354F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7EBF23145C4EDD000354F8 /* Foundation.framework */; };
+		2F7EBF26145C4EDD000354F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7EBF25145C4EDD000354F8 /* CoreGraphics.framework */; };
+		2F7EBF2C145C4EDD000354F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F7EBF2A145C4EDD000354F8 /* InfoPlist.strings */; };
+		2F7EBF2E145C4EDD000354F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EBF2D145C4EDD000354F8 /* main.m */; };
+		2F7EBF32145C4EDD000354F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EBF31145C4EDD000354F8 /* AppDelegate.m */; };
+		2F7EBF38145C4EDE000354F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EBF37145C4EDE000354F8 /* ViewController.m */; };
+		2F7EBF40145C4EDE000354F8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7EBF3F145C4EDE000354F8 /* SenTestingKit.framework */; };
+		2F7EBF41145C4EDE000354F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7EBF21145C4EDD000354F8 /* UIKit.framework */; };
+		2F7EBF42145C4EDE000354F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F7EBF23145C4EDD000354F8 /* Foundation.framework */; };
+		2F7EBF4A145C4EDE000354F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F7EBF48145C4EDE000354F8 /* InfoPlist.strings */; };
+		2F7EBF4D145C4EDE000354F8 /* AFTsingleViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F7EBF4C145C4EDE000354F8 /* AFTsingleViewTests.m */; };
+		2F7EBF57145C4EFA000354F8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7EBF56145C4EFA000354F8 /* MainStoryboard.storyboard */; };
+		2F7EBF5D145C4F1B000354F8 /* th_ vermilion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F7EBF59145C4F1B000354F8 /* th_ vermilion.jpg */; };
+		2F7EBF5E145C4F1B000354F8 /* th_catacomb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F7EBF5A145C4F1B000354F8 /* th_catacomb.jpg */; };
+		2F7EBF5F145C4F1B000354F8 /* th_pompei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F7EBF5B145C4F1B000354F8 /* th_pompei.jpg */; };
+		2F7EBF60145C4F1B000354F8 /* th_vitale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F7EBF5C145C4F1B000354F8 /* th_vitale.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F7EBF43145C4EDE000354F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F7EBF14145C4EDD000354F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F7EBF1C145C4EDD000354F8;
+			remoteInfo = AFTsingleView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F7EBF1D145C4EDD000354F8 /* AFTsingleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFTsingleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7EBF21145C4EDD000354F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2F7EBF23145C4EDD000354F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2F7EBF25145C4EDD000354F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2F7EBF29145C4EDD000354F8 /* AFTsingleView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFTsingleView-Info.plist"; sourceTree = "<group>"; };
+		2F7EBF2B145C4EDD000354F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F7EBF2D145C4EDD000354F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F7EBF2F145C4EDD000354F8 /* AFTsingleView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFTsingleView-Prefix.pch"; sourceTree = "<group>"; };
+		2F7EBF30145C4EDD000354F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F7EBF31145C4EDD000354F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F7EBF36145C4EDE000354F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2F7EBF37145C4EDE000354F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2F7EBF3E145C4EDE000354F8 /* AFTsingleViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFTsingleViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7EBF3F145C4EDE000354F8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2F7EBF47145C4EDE000354F8 /* AFTsingleViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFTsingleViewTests-Info.plist"; sourceTree = "<group>"; };
+		2F7EBF49145C4EDE000354F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F7EBF4B145C4EDE000354F8 /* AFTsingleViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFTsingleViewTests.h; sourceTree = "<group>"; };
+		2F7EBF4C145C4EDE000354F8 /* AFTsingleViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFTsingleViewTests.m; sourceTree = "<group>"; };
+		2F7EBF56145C4EFA000354F8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2F7EBF59145C4F1B000354F8 /* th_ vermilion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "th_ vermilion.jpg"; sourceTree = "<group>"; };
+		2F7EBF5A145C4F1B000354F8 /* th_catacomb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = th_catacomb.jpg; sourceTree = "<group>"; };
+		2F7EBF5B145C4F1B000354F8 /* th_pompei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = th_pompei.jpg; sourceTree = "<group>"; };
+		2F7EBF5C145C4F1B000354F8 /* th_vitale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = th_vitale.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F7EBF1A145C4EDD000354F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7EBF22145C4EDD000354F8 /* UIKit.framework in Frameworks */,
+				2F7EBF24145C4EDD000354F8 /* Foundation.framework in Frameworks */,
+				2F7EBF26145C4EDD000354F8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7EBF3A145C4EDE000354F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7EBF40145C4EDE000354F8 /* SenTestingKit.framework in Frameworks */,
+				2F7EBF41145C4EDE000354F8 /* UIKit.framework in Frameworks */,
+				2F7EBF42145C4EDE000354F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F7EBF12145C4EDD000354F8 = {
+			isa = PBXGroup;
+			children = (
+				2F7EBF58145C4F09000354F8 /* resource */,
+				2F7EBF27145C4EDD000354F8 /* AFTsingleView */,
+				2F7EBF45145C4EDE000354F8 /* AFTsingleViewTests */,
+				2F7EBF20145C4EDD000354F8 /* Frameworks */,
+				2F7EBF1E145C4EDD000354F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F7EBF1E145C4EDD000354F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F7EBF1D145C4EDD000354F8 /* AFTsingleView.app */,
+				2F7EBF3E145C4EDE000354F8 /* AFTsingleViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F7EBF20145C4EDD000354F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F7EBF21145C4EDD000354F8 /* UIKit.framework */,
+				2F7EBF23145C4EDD000354F8 /* Foundation.framework */,
+				2F7EBF25145C4EDD000354F8 /* CoreGraphics.framework */,
+				2F7EBF3F145C4EDE000354F8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F7EBF27145C4EDD000354F8 /* AFTsingleView */ = {
+			isa = PBXGroup;
+			children = (
+				2F7EBF56145C4EFA000354F8 /* MainStoryboard.storyboard */,
+				2F7EBF30145C4EDD000354F8 /* AppDelegate.h */,
+				2F7EBF31145C4EDD000354F8 /* AppDelegate.m */,
+				2F7EBF36145C4EDE000354F8 /* ViewController.h */,
+				2F7EBF37145C4EDE000354F8 /* ViewController.m */,
+				2F7EBF28145C4EDD000354F8 /* Supporting Files */,
+			);
+			path = AFTsingleView;
+			sourceTree = "<group>";
+		};
+		2F7EBF28145C4EDD000354F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F7EBF29145C4EDD000354F8 /* AFTsingleView-Info.plist */,
+				2F7EBF2A145C4EDD000354F8 /* InfoPlist.strings */,
+				2F7EBF2D145C4EDD000354F8 /* main.m */,
+				2F7EBF2F145C4EDD000354F8 /* AFTsingleView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F7EBF45145C4EDE000354F8 /* AFTsingleViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F7EBF4B145C4EDE000354F8 /* AFTsingleViewTests.h */,
+				2F7EBF4C145C4EDE000354F8 /* AFTsingleViewTests.m */,
+				2F7EBF46145C4EDE000354F8 /* Supporting Files */,
+			);
+			path = AFTsingleViewTests;
+			sourceTree = "<group>";
+		};
+		2F7EBF46145C4EDE000354F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F7EBF47145C4EDE000354F8 /* AFTsingleViewTests-Info.plist */,
+				2F7EBF48145C4EDE000354F8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F7EBF58145C4F09000354F8 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				2F7EBF59145C4F1B000354F8 /* th_ vermilion.jpg */,
+				2F7EBF5A145C4F1B000354F8 /* th_catacomb.jpg */,
+				2F7EBF5B145C4F1B000354F8 /* th_pompei.jpg */,
+				2F7EBF5C145C4F1B000354F8 /* th_vitale.jpg */,
+			);
+			name = resource;
+			path = AFTsingleView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F7EBF1C145C4EDD000354F8 /* AFTsingleView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7EBF50145C4EDE000354F8 /* Build configuration list for PBXNativeTarget "AFTsingleView" */;
+			buildPhases = (
+				2F7EBF19145C4EDD000354F8 /* Sources */,
+				2F7EBF1A145C4EDD000354F8 /* Frameworks */,
+				2F7EBF1B145C4EDD000354F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFTsingleView;
+			productName = AFTsingleView;
+			productReference = 2F7EBF1D145C4EDD000354F8 /* AFTsingleView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F7EBF3D145C4EDE000354F8 /* AFTsingleViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7EBF53145C4EDE000354F8 /* Build configuration list for PBXNativeTarget "AFTsingleViewTests" */;
+			buildPhases = (
+				2F7EBF39145C4EDE000354F8 /* Sources */,
+				2F7EBF3A145C4EDE000354F8 /* Frameworks */,
+				2F7EBF3B145C4EDE000354F8 /* Resources */,
+				2F7EBF3C145C4EDE000354F8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F7EBF44145C4EDE000354F8 /* PBXTargetDependency */,
+			);
+			name = AFTsingleViewTests;
+			productName = AFTsingleViewTests;
+			productReference = 2F7EBF3E145C4EDE000354F8 /* AFTsingleViewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F7EBF14145C4EDD000354F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 2F7EBF17145C4EDD000354F8 /* Build configuration list for PBXProject "AFTsingleView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2F7EBF12145C4EDD000354F8;
+			productRefGroup = 2F7EBF1E145C4EDD000354F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F7EBF1C145C4EDD000354F8 /* AFTsingleView */,
+				2F7EBF3D145C4EDE000354F8 /* AFTsingleViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F7EBF1B145C4EDD000354F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7EBF2C145C4EDD000354F8 /* InfoPlist.strings in Resources */,
+				2F7EBF57145C4EFA000354F8 /* MainStoryboard.storyboard in Resources */,
+				2F7EBF5D145C4F1B000354F8 /* th_ vermilion.jpg in Resources */,
+				2F7EBF5E145C4F1B000354F8 /* th_catacomb.jpg in Resources */,
+				2F7EBF5F145C4F1B000354F8 /* th_pompei.jpg in Resources */,
+				2F7EBF60145C4F1B000354F8 /* th_vitale.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7EBF3B145C4EDE000354F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7EBF4A145C4EDE000354F8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F7EBF3C145C4EDE000354F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F7EBF19145C4EDD000354F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7EBF2E145C4EDD000354F8 /* main.m in Sources */,
+				2F7EBF32145C4EDD000354F8 /* AppDelegate.m in Sources */,
+				2F7EBF38145C4EDE000354F8 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F7EBF39145C4EDE000354F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7EBF4D145C4EDE000354F8 /* AFTsingleViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F7EBF44145C4EDE000354F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F7EBF1C145C4EDD000354F8 /* AFTsingleView */;
+			targetProxy = 2F7EBF43145C4EDE000354F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F7EBF2A145C4EDD000354F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7EBF2B145C4EDD000354F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F7EBF48145C4EDE000354F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7EBF49145C4EDE000354F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F7EBF4E145C4EDE000354F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F7EBF4F145C4EDE000354F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F7EBF51145C4EDE000354F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFTsingleView/AFTsingleView-Prefix.pch";
+				INFOPLIST_FILE = "AFTsingleView/AFTsingleView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2F7EBF52145C4EDE000354F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFTsingleView/AFTsingleView-Prefix.pch";
+				INFOPLIST_FILE = "AFTsingleView/AFTsingleView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2F7EBF54145C4EDE000354F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFTsingleView.app/AFTsingleView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFTsingleView/AFTsingleView-Prefix.pch";
+				INFOPLIST_FILE = "AFTsingleViewTests/AFTsingleViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2F7EBF55145C4EDE000354F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFTsingleView.app/AFTsingleView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFTsingleView/AFTsingleView-Prefix.pch";
+				INFOPLIST_FILE = "AFTsingleViewTests/AFTsingleViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F7EBF17145C4EDD000354F8 /* Build configuration list for PBXProject "AFTsingleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7EBF4E145C4EDE000354F8 /* Debug */,
+				2F7EBF4F145C4EDE000354F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F7EBF50145C4EDE000354F8 /* Build configuration list for PBXNativeTarget "AFTsingleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7EBF51145C4EDE000354F8 /* Debug */,
+				2F7EBF52145C4EDE000354F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2F7EBF53145C4EDE000354F8 /* Build configuration list for PBXNativeTarget "AFTsingleViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7EBF54145C4EDE000354F8 /* Debug */,
+				2F7EBF55145C4EDE000354F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F7EBF14145C4EDD000354F8 /* Project object */;
+}
